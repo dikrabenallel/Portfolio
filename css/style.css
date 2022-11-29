@@ -7,6 +7,10 @@
   font-family: "Typographie";
   src: url("../font/Typography.otf");
 }
+@font-face {
+  font-family: "LEMONMILK-Regular";
+  src: url("../font/LEMONMILK-Regular.otf");
+}
 #menu-btn{
   display: none;
 }
@@ -287,39 +291,6 @@ header .navigation .navigation-items a:hover:before{
   border-bottom-style: none; 
  }
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -330,8 +301,87 @@ header .navigation .navigation-items a:hover:before{
 
 .SKILLS{
   background-image:url("../img/fond\ compétences.jpg");
-  width: 100%;
-  height: 100%;  
+  background-size: cover;
+  margin-top: 50px;
+  font-family: 'LEMONMILK-Regular';
+  
+}
+.SKILLS h1{
+ 
+  text-align: center;
+  color: black;
+  font-size: 500%; 
+}
+
+.COMPETENCES{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  background-color: #f5f5dc95;
+  border-radius: 50px;
+  padding: 20px;
+  width: 80%;
+  margin-bottom: 20px;
+  margin: auto;
+ 
+}
+
+/* .COMPETENCES h2{
+  transform : rotate(-90deg);
+  font-family: "Poppins";
+  font-size: 450%;
+  margin-right: 500px;
+} */
+
+.personnelles{
+  margin-left: 10%;
+}
+
+
+.personnelles img{
+  width: 45%;
+  
+}
+
+.personnelles h4{
+  margin-left: 5%;
+}
+
+.software{
+  margin-right: 5%;
+}
+
+
+
+.htmlcsscsharp img{
+  width: 45%;
+}
+
+#js img{
+  width: 40%;
+}
+
+#unity img{
+  width: 50%;
+}
+
+/* ------------------RESSOURCES------------------------------ */
+
+.RESSOURCES{
+  background-color: #4C4BC2;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+.RESSOURCES h1{
+  text-align: center;
+  color: white;
+  font-size: 500%;
+}
+
+#RESSOURCES>img{
+  margin: auto;
 }
 
 
