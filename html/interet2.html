@@ -6,6 +6,8 @@
     <title>Portfolio Dikra</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/8490/8490574.png">
+    <script src="https://kit.fontawesome.com/b869a029fa.js" crossorigin="anonymous"></script>
   </head>
   <body>
 
@@ -37,6 +39,7 @@
       <div class="media-icons">
         <a href="https://www.linkedin.com/in/dikra-ben-allel-368178252"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://github.com/dikrabenallel"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/Dikra_11"><i class="fa-brands fa-twitter"></i></a>
         <a href="https://wakelet.com/@DikraBenallel562"><i class="fas fa-search"></i></a>
         
 
@@ -83,7 +86,7 @@
                
               
             <div id="programmation"> 
-              <a href="index.html#INTERESTS">
+              <a href="../index.html#INTERESTS">
                 <img src="/img/joggeuse.gif" alt="gif joggeuse">
                 <h3>animation</h3>
               </a>
@@ -95,7 +98,6 @@
       </div>
   </section>
 
-
    <!-------------------------- SKILLS ---------------------------->
   
    <section class="SKILLS" id="SKILLS">
@@ -104,8 +106,8 @@
    <div class="COMPETENCES">
 
 <!-- partie gauche skills -->
-     <div>
-       <h2>personnelles</h2>
+     <div class="personnelles">
+       <!-- <h2>personnelles</h2> -->
        
        <div>
          <h4>organisation</h4>
@@ -125,65 +127,97 @@
      </div>
 
 <!-- partie droite skills -->
-     <div>
-       <h2>software</h2>
+     <div class="software">
+       <!-- <h2>software</h2> -->
        
-       <div>
+       <div id="js">
          <h4>javascript</h4>
          <img src="/img/js logo.png" alt="logo js">
        </div>
 
-       <div>
-         <h4>html</h4>
-         <img src="/img/html logo.png" alt="logo html">
-       </div>
+       <div class="htmlcsscsharp">
+           <div>
+             <h4>html</h4>
+             <img src="/img/html logo.png" alt="logo html">
+           </div>
 
-       <div>
-         <h4>css</h4>
-         <img src="/img/css logo.png" alt="logo css">
+           <div>
+             <h4>css</h4>
+             <img src="/img/css logo.png" alt="logo css">
+           </div>
+       
+       
+       
+         <div>
+             <h4>c#</h4>       
+             <img src="/img/csharp logo.png" alt="logo c#">
+         </div>
        </div>
        
-       <div>
-         <h4>c#</h4>       
-         <img src="/img/csharp logo.png" alt="logo c#">
-       </div>
+         <div id="unity">
+             <h4>unity</h4>       
+             <img src="/img/logo unity.webp" alt="logo unity">
+         </div>
+
 
      </div>
            
    </div>
  </section>
+
+<!-------------------------- Ressources---------------------->
   
-  <!-- Ressources -->
-  
-  <section class="RESSOURCES" id="RESSOURCES">
+<section class="RESSOURCES" id="RESSOURCES">
       
-      <div class="RESSOURCES">
-          <h1>ressources</h1>
-          <img src="/img/image ressources.png" alt="ptits bonhommes et livres">
-          <a href="https://www.reseaucerta.org/sites/default/files/sio/BTS_ServicesInformatiquesOrganisations2019.pdf">référentiel BTS SIO</a>
-          <a href="activite.html">activités</a>
-      </div>
-  </section> 
+  <div class="RESSOURCES">
+      <h1>RESSOURCES</h1>
+      
+      <img src="/img/image ressources.png" alt="ptits bonhommes et livres">
+      <a id="act"href="activite.html">Activités</a>
+      <a id="ref"href="https://www.reseaucerta.org/sites/default/files/sio/BTS_ServicesInformatiquesOrganisations2019.pdf">Référentiel BTS SIO</a>
+      <hr>
+  </div>
+</section> 
+   
   
-  <!--Contact-->
+  <!-------------------------Contact----------------------------------------->
 
   <section class="CONTACT" id="CONTACT">
   
-      <div class="CONTACT">
-          <h1>contact</h1>
-          <img src="/img/gif ordi accueil.gif" alt="mini animation d'un ordi qui bouge">
-          <form action="https://formspree.io/f/mlevllkz" method="post">
-              <label for="email">Your Email</label>
-              <input name="Email" id="email" type="email">
-              <button type="submit">Submit</button>
+    <div class="CONTACT" >
+        <h1>CONTACT</h1>
+        <img id="fond" src="/img/image fond contact.png" alt="déco fond">
+        <img id="ordi"src="/img/gif ordi accueil.gif" alt="mini animation d'un ordi qui bouge">
+        <div id="form-main">
+          <div id="form-div">
+            <form class="form" id="form1" action="https://formspree.io/f/mlevllkz" method="post">
+              
+              <p class="name">
+                <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nom/Prénom" id="name" />
+              </p>
+              
+              <p class="email">
+                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+              </p>
+              
+              <p class="text">
+                <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Message"></textarea>
+              </p>
+              
+              
+              <div class="submit">
+                <input type="submit" value="ENVOYER" id="button-blue"/>
+                <div class="ease"></div>
+              </div>
             </form>
-            <a href="#">
-              <img src="/img/fleche de retour.png" alt="fleche de retour en haut">
-          </a>
-  
-  
-      </div>        
-  </section>
+          </div>
+
+
+    </div> 
+      
+</section>
+
+
   <footer>
 
   </footer>
